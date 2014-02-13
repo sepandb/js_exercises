@@ -62,10 +62,10 @@ var assignGrade = function (score) {
 	if (score < 60) {
 		return "D"
 	}
-		if (score < 70) {
+	if (score < 70) {
 		return "C"
 	}
-		if (score < 80) {
+	if (score < 80) {
 		return "B"
 	}
 	return "A"
@@ -82,6 +82,26 @@ assignGrade(83)
 // returns the number and pluralized form, like "5 cats" or "1 dog".
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+
+var pluralizeThat = function(noun, number) {
+
+	if (number == 1) {
+		return number + " " + noun
+	}
+
+	else if (number>0) {
+		return number + " " + noun + "s"
+	}
+	else {
+		return  "not a valid number"
+	}
+
+}
+
+pluralizeThat("cat", 3)
+pluralizeThat("dog", 1)
+pluralizeThat("boat", 44)
+
 
 
 
