@@ -54,6 +54,27 @@ var helloWorld = function(language) {
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
 
+
+var assignGrade = function (score) {
+	if (score<50) {
+		return "F"
+	}
+	if (score < 60) {
+		return "D"
+	}
+		if (score < 70) {
+		return "C"
+	}
+		if (score < 80) {
+		return "B"
+	}
+	return "A"
+}
+
+assignGrade(59)
+assignGrade(23)
+assignGrade(83)
+
 // EXERCISE: The Pluralizer
 
 // Write a function named pluralize that:
